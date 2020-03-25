@@ -3,13 +3,263 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@drawable/app_background"
     tools:context=".tab2">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="match_parent">
 
+        <ImageButton
+            android:id="@+id/mobility_tab2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="88dp"
+            android:layout_marginEnd="36dp"
+            android:background="?android:selectableItemBackground"
+            android:foreground="@drawable/mobility"
+            app:layout_constraintEnd_toStartOf="@+id/helmet_tab2"
+            app:layout_constraintStart_toEndOf="@+id/mobilityvalue_tab2"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/mobilityvalue_tab2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="88dp"
+            android:fontFamily="monospace"
+            android:text="40"
+            android:textSize="36sp"
+            app:layout_constraintEnd_toStartOf="@+id/mobility_tab2"
+            app:layout_constraintStart_toEndOf="@+id/subclass_tab2"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/resilience_tab2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="36dp"
+            android:background="?android:selectableItemBackground"
+            android:foreground="@drawable/resilience"
+            app:layout_constraintEnd_toStartOf="@id/arms_tab2"
+            app:layout_constraintStart_toEndOf="@id/resiliencevalue_tab2"
+            app:layout_constraintTop_toBottomOf="@id/mobility_tab2" />
+
+        <TextView
+            android:id="@+id/resiliencevalue_tab2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="36dp"
+            android:fontFamily="monospace"
+            android:text="40"
+            android:textSize="36sp"
+            app:layout_constraintEnd_toStartOf="@id/resilience_tab2"
+            app:layout_constraintStart_toEndOf="@id/kinetic_tab2"
+            app:layout_constraintTop_toBottomOf="@id/mobilityvalue_tab2" />
+
+        <ImageButton
+            android:id="@+id/recovery_tab2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="163dp"
+            android:background="?android:selectableItemBackground"
+            android:foreground="@drawable/recovery"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/resiliencevalue_tab2"
+            app:layout_constraintTop_toBottomOf="@id/resilience_tab2" />
+
+        <TextView
+            android:id="@+id/recoveryvalue_tab2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="163dp"
+            android:layout_marginTop="36dp"
+            android:fontFamily="monospace"
+            android:text="40"
+            android:textSize="36sp"
+            app:layout_constraintEnd_toStartOf="@id/recovery_tab2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/resiliencevalue_tab2" />
+
+        <ImageButton
+            android:id="@+id/discipline_tab2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="36dp"
+            android:background="?android:selectableItemBackground"
+            android:foreground="@drawable/discipline"
+            app:layout_constraintEnd_toStartOf="@id/chest_tab2"
+            app:layout_constraintStart_toEndOf="@id/disciplinevalue_tab2"
+            app:layout_constraintTop_toBottomOf="@id/recovery_tab2" />
+
+        <TextView
+            android:id="@+id/disciplinevalue_tab2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="36dp"
+            android:fontFamily="monospace"
+            android:text="40"
+            android:textSize="36sp"
+            app:layout_constraintEnd_toStartOf="@id/discipline_tab2"
+            app:layout_constraintStart_toEndOf="@id/energy_tab2"
+            app:layout_constraintTop_toBottomOf="@id/recoveryvalue_tab2" />
+
+        <ImageButton
+            android:id="@+id/intellect_tab2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="36dp"
+            android:background="?android:selectableItemBackground"
+            android:foreground="@drawable/intellect"
+            app:layout_constraintEnd_toStartOf="@id/legs_tab2"
+            app:layout_constraintStart_toEndOf="@id/intellectvalue_tab2"
+            app:layout_constraintTop_toBottomOf="@id/discipline_tab2" />
+
+        <TextView
+            android:id="@+id/intellectvalue_tab2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="36dp"
+            android:fontFamily="monospace"
+            android:text="40"
+            android:textSize="36sp"
+            app:layout_constraintEnd_toStartOf="@id/intellect_tab2"
+            app:layout_constraintStart_toEndOf="@id/power_tab2"
+            app:layout_constraintTop_toBottomOf="@id/disciplinevalue_tab2" />
+
+        <ImageButton
+            android:id="@+id/strength_tab2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="163dp"
+            android:background="?android:selectableItemBackground"
+            android:foreground="@drawable/strength"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/strengthvalue_tab2"
+            app:layout_constraintTop_toBottomOf="@id/intellect_tab2" />
+
+        <TextView
+            android:id="@+id/strengthvalue_tab2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="163dp"
+            android:layout_marginTop="36dp"
+            android:fontFamily="monospace"
+            android:text="40"
+            android:textSize="36sp"
+            app:layout_constraintEnd_toStartOf="@id/strength_tab2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/intellectvalue_tab2" />
+
+        <ImageButton
+            android:id="@+id/subclass_tab2"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginStart="37dp"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/iron_fellowship_casque"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/kinetic_tab2"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginStart="37dp"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/iron_fellowship_casque"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/subclass_tab2" />
+
+        <ImageButton
+            android:id="@+id/energy_tab2"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/iron_fellowship_casque"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/kinetic_tab2" />
+
+        <ImageButton
+            android:id="@+id/power_tab2"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginStart="37dp"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/iron_fellowship_casque"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/energy_tab2" />
+
+        <ImageButton
+            android:id="@+id/ghost_tab2"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/iron_fellowship_casque"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/power_tab2" />
+
+        <ImageButton
+            android:id="@+id/helmet_tab2"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="37dp"
+            android:src="@drawable/iron_fellowship_casque"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/arms_tab2"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="37dp"
+            android:src="@drawable/iron_fellowship_casque"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/helmet_tab2" />
+
+        <ImageButton
+            android:id="@+id/chest_tab2"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="37dp"
+            android:src="@drawable/iron_fellowship_casque"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/arms_tab2" />
+
+        <ImageButton
+            android:id="@+id/legs_tab2"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="37dp"
+            android:src="@drawable/iron_fellowship_casque"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chest_tab2" />
+
+        <ImageButton
+            android:id="@+id/classitem_tab2"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="37dp"
+            android:src="@drawable/iron_fellowship_casque"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/legs_tab2" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>
