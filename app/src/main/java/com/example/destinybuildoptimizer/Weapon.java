@@ -1,7 +1,7 @@
 package com.example.destinybuildoptimizer;
 
 public class Weapon extends Item{
-    //0:kinetic, 1: energy, 2: heavy
+    //0:kinetic, 1: energy, 2: power
     private int weaponSlot;
     private int impact, range, stability, handling, reloadSpeed, RPM, magSize;
 

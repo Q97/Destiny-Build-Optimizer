@@ -5,14 +5,4 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/app_background"
-    tools:context=".tab4">
-
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
-
-
-
-</FrameLayout>
+    tools:context=".tab4"/>

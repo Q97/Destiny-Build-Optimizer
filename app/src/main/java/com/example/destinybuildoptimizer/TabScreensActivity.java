@@ -1,7 +1,6 @@
 package com.example.destinybuildoptimizer;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.content.ContextCompat;
 import androidx.viewpager.widget.ViewPager;
 
 import android.os.Bundle;
@@ -9,7 +8,7 @@ import android.os.Bundle;
 import com.google.android.material.tabs.TabItem;
 import com.google.android.material.tabs.TabLayout;
 
-public class CharacterActivity extends AppCompatActivity {
+public class TabScreensActivity extends AppCompatActivity {
 
     private ViewPager viewPager;
     private PageAdapter adapter;
@@ -19,7 +18,7 @@ public class CharacterActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_character);
+        setContentView(R.layout.activity_tabscreens);
 
         tabLayout = findViewById(R.id.tabs);
         tab1 = findViewById(R.id.tab1);
