@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_background">
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:background="?android:selectableItemBackground"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="?attr/actionModeCloseDrawable" />
+
+    <TextView
+        android:id="@+id/detail_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="40dp"
+        android:fontFamily="monospace"
+        android:text="Ancient Apocalypse Mask"
+        android:textColor="@color/DBOTextColor"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/detail_icon"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/detail_icon"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton"
+        app:srcCompat="@drawable/ancient_apocalypse_mask_icon1" />
+
+    <TextView
+        android:id="@+id/detail_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:layout_marginEnd="270dp"
+        android:fontFamily="monospace"
+        android:text="Helmet"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/detail_icon"
+        app:layout_constraintTop_toBottomOf="@+id/detail_name" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="344dp"
+        android:layout_height="316dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/detail_name"
+        app:srcCompat="@drawable/ancient_apocalypse_mask_preview" />
+
+    <TextView
+        android:id="@+id/detail_stat1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="236dp"
+        android:layout_weight="1"
+        android:fontFamily="monospace"
+        android:text="Mobility"
+        android:textColor="@color/DBOTextColor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/detail_icon" />
+
+    <ProgressBar
+        android:id="@+id/detail_stat1_bar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="270dp"
+        android:max="100"
+        android:progress="25"
+        android:progressBackgroundTint="#838383"
+        android:progressTint="@color/DBOTextColor"
+        android:scaleX="4"
+        android:scaleY="4"
+        app:layout_constraintStart_toEndOf="@id/detail_stat1"
+        app:layout_constraintTop_toBottomOf="@id/detail_name" />
+
+    <TextView
+        android:id="@+id/detail_stat1_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="268dp"
+        android:layout_marginEnd="80dp"
+        android:layout_weight="1"
+        android:text="25"
+        android:textColor="@color/DBOTextColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/detail_name" />
+
+    <TextView
+        android:id="@+id/detail_stat2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="6dp"
+        android:layout_weight="1"
+        android:fontFamily="monospace"
+        android:text="Resilience"
+        android:textColor="@color/DBOTextColor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/detail_stat1" />
+
+    <ProgressBar
+        android:id="@+id/detail_stat2_bar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="8dp"
+        android:max="100"
+        android:progress="11"
+        android:progressBackgroundTint="#838383"
+        android:progressTint="@color/DBOTextColor"
+        android:scaleX="4"
+        android:scaleY="4"
+        app:layout_constraintStart_toEndOf="@id/detail_stat2"
+        app:layout_constraintTop_toBottomOf="@id/detail_stat1_bar" />
+
+    <TextView
+        android:id="@+id/detail_stat2_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="80dp"
+        android:layout_weight="1"
+        android:text="11"
+        android:textColor="@color/DBOTextColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@id/detail_stat2_bar"
+        app:layout_constraintTop_toBottomOf="@id/detail_stat1_value" />
+
+    <TextView
+        android:id="@+id/detail_stat3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="6dp"
+        android:layout_weight="1"
+        android:fontFamily="monospace"
+        android:text="Recovery"
+        android:textColor="@color/DBOTextColor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/detail_stat2" />
+
+    <ProgressBar
+        android:id="@+id/detail_stat3_bar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="8dp"
+        android:max="100"
+        android:progress="14"
+        android:progressBackgroundTint="#838383"
+        android:progressTint="@color/DBOTextColor"
+        android:scaleX="4"
+        android:scaleY="4"
+        app:layout_constraintStart_toEndOf="@id/detail_stat3"
+        app:layout_constraintTop_toBottomOf="@id/detail_stat2_bar" />
+
+    <TextView
+        android:id="@+id/detail_stat3_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="80dp"
+        android:layout_weight="1"
+        android:text="14"
+        android:textColor="@color/DBOTextColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@id/detail_stat3_bar"
+        app:layout_constraintTop_toBottomOf="@id/detail_stat2_value" />
+
+    <TextView
+        android:id="@+id/detail_stat4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="3dp"
+        android:layout_weight="1"
+        android:fontFamily="monospace"
+        android:text="Discipline"
+        android:textColor="@color/DBOTextColor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/detail_stat3" />
+
+    <ProgressBar
+        android:id="@+id/detail_stat4_bar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="8dp"
+        android:max="100"
+        android:progress="3"
+        android:progressBackgroundTint="#838383"
+        android:progressTint="@color/DBOTextColor"
+        android:scaleX="4"
+        android:scaleY="4"
+        app:layout_constraintStart_toEndOf="@id/detail_stat4"
+        app:layout_constraintTop_toBottomOf="@id/detail_stat3_bar" />
+
+    <TextView
+        android:id="@+id/detail_stat4_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="80dp"
+        android:layout_weight="1"
+        android:text="3"
+        android:textColor="@color/DBOTextColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@id/detail_stat3_bar"
+        app:layout_constraintTop_toBottomOf="@id/detail_stat3_value" />
+
+    <TextView
+        android:id="@+id/detail_stat5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="3dp"
+        android:layout_weight="1"
+        android:fontFamily="monospace"
+        android:text="Intellect"
+        android:textColor="@color/DBOTextColor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/detail_stat4" />
+
+    <ProgressBar
+        android:id="@+id/detail_stat5_bar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="8dp"
+        android:max="100"
+        android:progress="5"
+        android:progressBackgroundTint="#838383"
+        android:progressTint="@color/DBOTextColor"
+        android:scaleX="4"
+        android:scaleY="4"
+        app:layout_constraintStart_toEndOf="@id/detail_stat5"
+        app:layout_constraintTop_toBottomOf="@id/detail_stat4_bar" />
+
+    <TextView
+        android:id="@+id/detail_stat5_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="80dp"
+        android:layout_weight="1"
+        android:text="5"
+        android:textColor="@color/DBOTextColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@id/detail_stat4_bar"
+        app:layout_constraintTop_toBottomOf="@id/detail_stat4_value" />
+
+    <TextView
+        android:id="@+id/detail_stat6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="3dp"
+        android:layout_weight="1"
+        android:fontFamily="monospace"
+        android:text="Strength"
+        android:textColor="@color/DBOTextColor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/detail_stat5" />
+
+    <ProgressBar
+        android:id="@+id/detail_stat6_bar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="8dp"
+        android:max="100"
+        android:progress="4"
+        android:progressBackgroundTint="#838383"
+        android:progressTint="@color/DBOTextColor"
+        android:scaleX="4"
+        android:scaleY="4"
+        app:layout_constraintStart_toEndOf="@id/detail_stat6"
+        app:layout_constraintTop_toBottomOf="@id/detail_stat5_bar" />
+
+    <TextView
+        android:id="@+id/detail_stat6_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="80dp"
+        android:layout_weight="1"
+        android:text="4"
+        android:textColor="@color/DBOTextColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@id/detail_stat6_bar"
+        app:layout_constraintTop_toBottomOf="@id/detail_stat5_value" />
+
+    <TextView
+        android:id="@+id/detail_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="2dp"
+        android:layout_weight="1"
+        android:fontFamily="monospace"
+        android:text="Total"
+        android:textColor="@color/DBOTextColor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/detail_stat6" />
+
+    <TextView
+        android:id="@+id/detail_total_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="80dp"
+        android:layout_weight="1"
+        android:text="61"
+        android:textColor="@color/DBOTextColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.009"
+        app:layout_constraintStart_toEndOf="@id/detail_total"
+        app:layout_constraintTop_toBottomOf="@id/detail_stat6_bar" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/EnergyLayout"
+        android:layout_width="340dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="172dp"
+        android:background="@color/Solar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ProgressBar
+            android:id="@+id/detail_stat6_bar2"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="146dp"
+            android:layout_marginTop="3dp"
+            android:max="100"
+            android:progress="60"
+            android:progressBackgroundTint="#838383"
+            android:progressTint="@color/DBOTextColor"
+            android:scaleX="7"
+            android:scaleY="4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/energyText" />
+
+        <TextView
+            android:id="@+id/energy_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:layout_weight="1"
+            android:fontFamily="monospace"
+            android:paddingLeft="5dp"
+            android:text="6"
+            android:textColor="@color/DBOTextColor"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/energyText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
+            android:fontFamily="monospace"
+            android:text="@string/energyText"
+            android:textColor="@color/DBOTextColor"
+            app:layout_constraintStart_toEndOf="@+id/energy_value"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/unusedText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:fontFamily="monospace"
+            android:text="@string/UnusedText"
+            android:textColor="@color/DBOTextColor"
+            app:layout_constraintEnd_toStartOf="@+id/unused_value"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/unused_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="18dp"
+            android:layout_weight="1"
+            android:fontFamily="monospace"
+            android:paddingRight="5dp"
+            android:text="6"
+            android:textColor="@color/DBOTextColor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

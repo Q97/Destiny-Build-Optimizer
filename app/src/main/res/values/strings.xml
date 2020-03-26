@@ -5,6 +5,8 @@
     <string name="inventoryText">/Inventory</string>
     <string name="favouriteText">/Favourites</string>
     <string name="vaultText">/Vault</string>
+    <string name="energyText">Energy</string>
+    <string name="UnusedText">Unused</string>
 
 
 </resources>

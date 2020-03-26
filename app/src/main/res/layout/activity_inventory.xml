@@ -59,6 +59,7 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="14dp"
                 android:layout_marginEnd="24dp"
+                android:background="?android:selectableItemBackground"
                 app:layout_constraintEnd_toStartOf="@id/favourite_slot2"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
@@ -71,9 +72,10 @@
                 android:layout_height="90dp"
                 android:layout_marginTop="14dp"
                 android:layout_marginEnd="56dp"
+                android:background="?android:selectableItemBackground"
                 app:layout_constraintEnd_toStartOf="@id/favourite_slot3"
                 app:layout_constraintTop_toBottomOf="@id/favouriteText"
-                app:srcCompat="@drawable/iron_fellowship_casque" />
+                app:srcCompat="@drawable/reverie_dawn_casque_icon1" />
 
             <ImageButton
                 android:id="@+id/favourite_slot3"
@@ -81,9 +83,10 @@
                 android:layout_height="90dp"
                 android:layout_marginTop="14dp"
                 android:layout_marginEnd="16dp"
+                android:background="?android:selectableItemBackground"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/favouriteText"
-                app:srcCompat="@drawable/iron_fellowship_casque" />
+                app:srcCompat="@drawable/empty_slot" />
 
             <ImageButton
                 android:id="@+id/favourite_slot4"
@@ -92,11 +95,12 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="32dp"
                 android:layout_marginEnd="54dp"
+                android:background="?android:selectableItemBackground"
                 app:layout_constraintEnd_toStartOf="@id/favourite_slot5"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/favourite_slot1"
-                app:srcCompat="@drawable/iron_fellowship_casque" />
+                app:srcCompat="@drawable/empty_slot" />
 
             <ImageButton
                 android:id="@+id/favourite_slot5"
@@ -104,9 +108,10 @@
                 android:layout_height="90dp"
                 android:layout_marginTop="32dp"
                 android:layout_marginEnd="56dp"
+                android:background="?android:selectableItemBackground"
                 app:layout_constraintEnd_toStartOf="@id/favourite_slot6"
                 app:layout_constraintTop_toBottomOf="@id/favourite_slot2"
-                app:srcCompat="@drawable/iron_fellowship_casque" />
+                app:srcCompat="@drawable/empty_slot" />
 
             <ImageButton
                 android:id="@+id/favourite_slot6"
@@ -114,9 +119,10 @@
                 android:layout_height="90dp"
                 android:layout_marginTop="32dp"
                 android:layout_marginEnd="16dp"
+                android:background="?android:selectableItemBackground"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/favourite_slot3"
-                app:srcCompat="@drawable/iron_fellowship_casque" />
+                app:srcCompat="@drawable/empty_slot" />
 
             <TextView
                 android:id="@+id/inventoryText"
@@ -139,11 +145,12 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="14dp"
                 android:layout_marginEnd="24dp"
+                android:background="?android:selectableItemBackground"
                 app:layout_constraintEnd_toStartOf="@+id/inventory_slot2"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/inventoryText"
-                app:srcCompat="@drawable/iron_fellowship_casque" />
+                app:srcCompat="@drawable/red_moon_phantom_mask_icon1" />
 
             <ImageButton
                 android:id="@+id/inventory_slot2"
@@ -151,9 +158,10 @@
                 android:layout_height="90dp"
                 android:layout_marginTop="14dp"
                 android:layout_marginEnd="56dp"
+                android:background="?android:selectableItemBackground"
                 app:layout_constraintEnd_toStartOf="@+id/inventory_slot3"
                 app:layout_constraintTop_toBottomOf="@+id/inventoryText"
-                app:srcCompat="@drawable/iron_fellowship_casque" />
+                app:srcCompat="@drawable/gensym_knight_casque_icon1" />
 
             <ImageButton
                 android:id="@+id/inventory_slot3"
@@ -161,9 +169,10 @@
                 android:layout_height="90dp"
                 android:layout_marginTop="14dp"
                 android:layout_marginEnd="16dp"
+                android:background="?android:selectableItemBackground"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/inventoryText"
-                app:srcCompat="@drawable/iron_fellowship_casque" />
+                app:srcCompat="@drawable/righteous_mask_icon1" />
 
             <ImageButton
                 android:id="@+id/inventory_slot4"
@@ -172,11 +181,12 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="32dp"
                 android:layout_marginEnd="54dp"
+                android:background="?android:selectableItemBackground"
                 app:layout_constraintEnd_toStartOf="@+id/inventory_slot5"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/inventory_slot1"
-                app:srcCompat="@drawable/iron_fellowship_casque" />
+                app:srcCompat="@drawable/empty_slot" />
 
             <ImageButton
                 android:id="@+id/inventory_slot5"
@@ -184,9 +194,10 @@
                 android:layout_height="90dp"
                 android:layout_marginTop="32dp"
                 android:layout_marginEnd="56dp"
+                android:background="?android:selectableItemBackground"
                 app:layout_constraintEnd_toStartOf="@+id/inventory_slot6"
                 app:layout_constraintTop_toBottomOf="@+id/inventory_slot2"
-                app:srcCompat="@drawable/iron_fellowship_casque" />
+                app:srcCompat="@drawable/empty_slot" />
 
             <ImageButton
                 android:id="@+id/inventory_slot6"
@@ -194,9 +205,10 @@
                 android:layout_height="90dp"
                 android:layout_marginTop="32dp"
                 android:layout_marginEnd="16dp"
+                android:background="?android:selectableItemBackground"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/inventory_slot3"
-                app:srcCompat="@drawable/iron_fellowship_casque" />
+                app:srcCompat="@drawable/empty_slot" />
 
             <ImageButton
                 android:id="@+id/inventory_slot7"
@@ -205,11 +217,12 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="32dp"
                 android:layout_marginEnd="54dp"
+                android:background="?android:selectableItemBackground"
                 app:layout_constraintEnd_toStartOf="@+id/inventory_slot8"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/inventory_slot4"
-                app:srcCompat="@drawable/iron_fellowship_casque" />
+                app:srcCompat="@drawable/empty_slot" />
 
             <ImageButton
                 android:id="@+id/inventory_slot8"
@@ -217,9 +230,10 @@
                 android:layout_height="90dp"
                 android:layout_marginTop="32dp"
                 android:layout_marginEnd="56dp"
+                android:background="?android:selectableItemBackground"
                 app:layout_constraintEnd_toStartOf="@+id/inventory_slot9"
                 app:layout_constraintTop_toBottomOf="@+id/inventory_slot5"
-                app:srcCompat="@drawable/iron_fellowship_casque" />
+                app:srcCompat="@drawable/empty_slot" />
 
             <ImageButton
                 android:id="@+id/inventory_slot9"
@@ -227,9 +241,10 @@
                 android:layout_height="90dp"
                 android:layout_marginTop="32dp"
                 android:layout_marginEnd="16dp"
+                android:background="?android:selectableItemBackground"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/inventory_slot6"
-                app:srcCompat="@drawable/iron_fellowship_casque" />
+                app:srcCompat="@drawable/empty_slot" />
 
             <TextView
                 android:id="@+id/vaultInventoryText"
@@ -250,6 +265,7 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="14dp"
                 android:layout_marginEnd="24dp"
+                android:background="?android:selectableItemBackground"
                 app:layout_constraintEnd_toStartOf="@id/vault_inv_slot2"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
@@ -262,6 +278,7 @@
                 android:layout_height="90dp"
                 android:layout_marginTop="14dp"
                 android:layout_marginEnd="56dp"
+                android:background="?android:selectableItemBackground"
                 app:layout_constraintEnd_toStartOf="@id/vault_inv_slot3"
                 app:layout_constraintTop_toBottomOf="@id/vaultInventoryText"
                 app:srcCompat="@drawable/iron_fellowship_casque" />
@@ -272,6 +289,7 @@
                 android:layout_height="90dp"
                 android:layout_marginTop="14dp"
                 android:layout_marginEnd="16dp"
+                android:background="?android:selectableItemBackground"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/vaultInventoryText"
                 app:srcCompat="@drawable/iron_fellowship_casque" />
@@ -283,6 +301,7 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="32dp"
                 android:layout_marginEnd="54dp"
+                android:background="?android:selectableItemBackground"
                 app:layout_constraintEnd_toStartOf="@id/vault_inv_slot5"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
@@ -295,9 +314,10 @@
                 android:layout_height="90dp"
                 android:layout_marginTop="32dp"
                 android:layout_marginEnd="56dp"
+                android:background="?android:selectableItemBackground"
                 app:layout_constraintEnd_toStartOf="@id/vault_inv_slot6"
                 app:layout_constraintTop_toBottomOf="@id/vault_inv_slot2"
-                app:srcCompat="@drawable/iron_fellowship_casque" />
+                app:srcCompat="@drawable/empty_slot" />
 
             <ImageButton
                 android:id="@+id/vault_inv_slot6"
@@ -305,9 +325,10 @@
                 android:layout_height="90dp"
                 android:layout_marginTop="32dp"
                 android:layout_marginEnd="16dp"
+                android:background="?android:selectableItemBackground"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/vault_inv_slot3"
-                app:srcCompat="@drawable/iron_fellowship_casque" />
+                app:srcCompat="@drawable/empty_slot" />
 
             <ImageButton
                 android:id="@+id/vault_inv_slot7"
@@ -316,11 +337,12 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="32dp"
                 android:layout_marginEnd="54dp"
+                android:background="?android:selectableItemBackground"
                 app:layout_constraintEnd_toStartOf="@id/vault_inv_slot8"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/vault_inv_slot4"
-                app:srcCompat="@drawable/iron_fellowship_casque" />
+                app:srcCompat="@drawable/empty_slot" />
 
             <ImageButton
                 android:id="@+id/vault_inv_slot8"
@@ -328,9 +350,10 @@
                 android:layout_height="90dp"
                 android:layout_marginTop="32dp"
                 android:layout_marginEnd="56dp"
+                android:background="?android:selectableItemBackground"
                 app:layout_constraintEnd_toStartOf="@id/vault_inv_slot9"
                 app:layout_constraintTop_toBottomOf="@id/vault_inv_slot5"
-                app:srcCompat="@drawable/iron_fellowship_casque" />
+                app:srcCompat="@drawable/empty_slot" />
 
             <ImageButton
                 android:id="@+id/vault_inv_slot9"
@@ -338,9 +361,10 @@
                 android:layout_height="90dp"
                 android:layout_marginTop="32dp"
                 android:layout_marginEnd="16dp"
+                android:background="?android:selectableItemBackground"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/vault_inv_slot6"
-                app:srcCompat="@drawable/iron_fellowship_casque" />
+                app:srcCompat="@drawable/empty_slot" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
