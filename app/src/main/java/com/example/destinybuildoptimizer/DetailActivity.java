@@ -46,7 +46,7 @@ public class DetailActivity extends AppCompatActivity {
         final ImageButton detailToCharacter1 = findViewById(R.id.detail_toCharacter1);
         final ImageButton detailToCharacter2 = findViewById(R.id.detail_toCharacter2);
         final ImageButton detailToCharacter3 = findViewById(R.id.detail_toCharacter3);
-        final ImageButton backButton = findViewById(R.id.backbtnDetails);
+
 
         detailName.setText(currentItem.name);
 
@@ -89,13 +89,26 @@ public class DetailActivity extends AppCompatActivity {
                 account.equipItem(currentItem);
                 startActivity(new Intent(DetailActivity.this, TabScreensActivity.class));
             }
-        });
+        });*/
 
+        final ImageButton backButton = findViewById(R.id.backbtnDetails);
         backButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 onBackPressed();
             }
-        });*/
+        });
+
+        final ImageButton btn_c1 = (ImageButton) findViewById(R.id.detail_toCharacter1);
+        btn_c1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent returnIntent = new Intent();
+                returnIntent.putExtra("image","done");
+                setResult(RESULT_OK,returnIntent);
+                finish();
+            }
+        });
+
     }
 }

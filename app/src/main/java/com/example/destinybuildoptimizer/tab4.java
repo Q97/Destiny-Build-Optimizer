@@ -11,6 +11,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
 
+import static android.app.Activity.RESULT_CANCELED;
+import static android.app.Activity.RESULT_OK;
 
 
 /**
@@ -19,6 +21,8 @@ import android.widget.ImageButton;
 public class tab4 extends Fragment {
 
     public static final int REQUEST_CODE = 1;
+    ImageButton helmetbtn;
+    tab1 j =new tab1();
     public tab4() {
         // Required empty public constructor
     }
@@ -40,6 +44,20 @@ public class tab4 extends Fragment {
         });
 
         return view;
+    }
+
+    public void onActivityResult(int requestCode, int resultCode, Intent data){
+
+        if (requestCode == 1) {
+
+            if (resultCode == RESULT_OK) {
+                j.setHelmetbtn();
+            }
+            if (resultCode == RESULT_CANCELED) {
+                //Do nothing?
+            }
+        }
+
     }
 
 }

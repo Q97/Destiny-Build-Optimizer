@@ -25,7 +25,7 @@
         android:layout_marginTop="48dp"
         android:layout_marginEnd="40dp"
         android:fontFamily="monospace"
-        android:text="Ancient Apocalypse Mask"
+        android:text="Iron Fellowship Casque"
         android:textColor="@color/DBOTextColor"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -41,7 +41,7 @@
         android:layout_marginTop="12dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/backbtnDetails"
-        app:srcCompat="@drawable/ancient_apocalypse_mask_icon1" />
+        app:srcCompat="@drawable/iron_fellowship_casque" />
 
     <TextView
         android:id="@+id/detail_type"
@@ -65,7 +65,7 @@
         app:layout_constraintHorizontal_bias="0.333"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/detail_name"
-        app:srcCompat="@drawable/ancient_apocalypse_mask_preview" />
+        app:srcCompat="@drawable/iron_fellowship_casque_preview" />
 
     <TextView
         android:id="@+id/detail_stat1"

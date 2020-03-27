@@ -25,6 +25,7 @@ import static android.app.Activity.RESULT_OK;
 public class tab1 extends Fragment {
 
     public static final int REQUEST_CODE = 1;
+    ImageButton helmetbtn;
     public tab1() {
         // Required empty public constructor
     }
@@ -229,7 +230,7 @@ public class tab1 extends Fragment {
             }
         });
 
-        final ImageButton helmetbtn = (ImageButton) view.findViewById(R.id.helmet_tab1);
+        helmetbtn = (ImageButton) view.findViewById(R.id.helmet_tab1);
         helmetbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -290,6 +291,10 @@ public class tab1 extends Fragment {
             }
         }
 
+    }
+
+    public void setHelmetbtn(){
+        helmetbtn.setImageResource(R.drawable.ancient_apocalypse_mask_icon1);
     }
 
 
