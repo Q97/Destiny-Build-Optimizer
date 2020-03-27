@@ -1,12 +1,29 @@
 package com.example.destinybuildoptimizer;
 
 public abstract class Item {
-    int ID;
+    Integer ID;
     String name;
-    boolean isFavourite;
-    String imageURL;
+    Boolean isFavourite;
+    String icon;
+    String detailsImage;
+    Boolean isExotic;
 
     public void changeFavorite(){
         isFavourite = !isFavourite;
+    }
+
+    public void changeExotic(){
+        isExotic = !isExotic;
+    }
+
+    public void setName(String n){
+        name = n;
+    }
+
+    public void setIcon(String url){
+        icon = url;
+    }
+    public void setDetailsImage(String url){
+        detailsImage = url;
     }
 }
