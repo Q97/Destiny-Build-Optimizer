@@ -7,6 +7,9 @@
     <string name="vaultText">/Vault</string>
     <string name="energyText">Energy</string>
     <string name="UnusedText">Unused</string>
+    <string name="tutorial">1.\"HOLD\" on an item to view the item detail screen \n\n
+    2.\"TAP\" on an item when on the inventory screen to equip \n\n
+    3.\"TAP\" on an item when in the vault screen to send it to a specified character</string>
 
 
 </resources>

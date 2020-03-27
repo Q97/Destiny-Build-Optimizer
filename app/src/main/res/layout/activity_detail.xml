@@ -7,7 +7,7 @@
     android:background="@drawable/app_background">
 
     <ImageButton
-        android:id="@+id/imageButton"
+        android:id="@+id/backbtnDetails"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
@@ -40,7 +40,7 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="12dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton"
+        app:layout_constraintTop_toBottomOf="@id/backbtnDetails"
         app:srcCompat="@drawable/ancient_apocalypse_mask_icon1" />
 
     <TextView
@@ -57,7 +57,7 @@
         app:layout_constraintTop_toBottomOf="@+id/detail_name" />
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/detail_preview"
         android:layout_width="344dp"
         android:layout_height="316dp"
         android:layout_marginStart="32dp"
@@ -362,7 +362,7 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <ProgressBar
-            android:id="@+id/detail_stat6_bar2"
+            android:id="@+id/energy_bar"
             style="?android:attr/progressBarStyleHorizontal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
