@@ -1,6 +1,8 @@
 package com.example.destinybuildoptimizer;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.HashMap;
 
 public class Account {
@@ -39,6 +41,10 @@ public class Account {
         if(characters.size() < 3){
             characters.add(c);
         }
+    }
+
+    public <I extends Item> void addToVault(I i){
+        vault.add(i);
     }
 
     public <I extends Item> void addToInventory(ArrayList<I> inv, I i){
@@ -120,42 +126,64 @@ public class Account {
         }
     }
 
-    /*
     public void optimize(Integer characterClass, String targetStat){
         ArrayList<ArmourPiece> classHelmets = new ArrayList<>();
         ArrayList<ArmourPiece> classArms = new ArrayList<>();
         ArrayList<ArmourPiece> classChest = new ArrayList<>();
         ArrayList<ArmourPiece> classLegs = new ArrayList<>();
 
-        for (Map.Entry m : helmetStorage.entrySet()){
-            ArmourPiece current = (ArmourPiece)m.getValue();
-            if(current.getArmourClass() == characterClass)
-                classHelmets.add(current);
+        for (ArmourPiece m : helmetStorage){
+            if(m.getArmourClass() == characterClass)
+                classHelmets.add(m);
         }
 
-        for (Map.Entry m : armsStorage.entrySet()){
-            ArmourPiece current = (ArmourPiece)m.getValue();
-            if(current.getArmourClass() == characterClass)
-                classArms.add(current);
+        for (ArmourPiece m : armsStorage){
+            if(m.getArmourClass() == characterClass)
+                classArms.add(m);
         }
 
-        for (Map.Entry m : chestStorage.entrySet()){
-            ArmourPiece current = (ArmourPiece)m.getValue();
-            if(current.getArmourClass() == characterClass)
-                classChest.add(current);
+        for (ArmourPiece m : chestStorage){
+            if(m.getArmourClass() == characterClass)
+                classChest.add(m);
         }
 
-        for (Map.Entry m : legsStorage.entrySet()){
-            ArmourPiece current = (ArmourPiece)m.getValue();
-            if(current.getArmourClass() == characterClass)
-                classLegs.add(current);
+        for (ArmourPiece m : legsStorage){
+            if(m.getArmourClass() == characterClass)
+                classLegs.add(m);
         }
 
-        ArmourPiece bestHelmet;
-        ArmourPiece bestArms;
-        ArmourPiece bestChest;
-        ArmourPiece bestLegs;
+        ArmourPiece bestHelmet = helmetStorage.get(0);
+        ArmourPiece bestArms = armsStorage.get(0);
+        ArmourPiece bestChest = chestStorage.get(0);
+        ArmourPiece bestLegs = legsStorage.get(0);
 
-        bestHelmet = Collections.max(helmetStorage, Comparator.comparing((ArmourPiece a) -> a.getStats().get(targetStat)));
-    }*/
+        for (ArmourPiece a : classHelmets){
+            Integer x = (Integer)bestHelmet.getStats().get(targetStat);
+            Integer y = (Integer)a.getStats().get(targetStat);
+            if( x > y) bestHelmet = a;
+    }
+
+        for (ArmourPiece a : classArms){
+            Integer x = (Integer)bestArms.getStats().get(targetStat);
+            Integer y = (Integer)a.getStats().get(targetStat);
+            if(x > y) bestArms = a;
+        }
+
+        for (ArmourPiece a : classChest){
+            Integer x = (Integer)bestChest.getStats().get(targetStat);
+            Integer y = (Integer)a.getStats().get(targetStat);
+            if(x > y) bestChest = a;
+        }
+
+        for (ArmourPiece a : classLegs){
+            Integer x = (Integer)bestLegs.getStats().get(targetStat);
+            Integer y = (Integer)a.getStats().get(targetStat);
+            if(x > y) bestLegs = a;
+        }
+
+        equipItem(bestHelmet);
+        equipItem(bestArms);
+        equipItem(bestChest);
+        equipItem(bestLegs);
+    }
 }

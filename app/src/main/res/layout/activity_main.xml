@@ -26,7 +26,8 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:text="@string/continueText"
-            android:textColor="#ffffff" />
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

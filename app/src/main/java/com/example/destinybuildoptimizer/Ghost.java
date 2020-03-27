@@ -2,12 +2,15 @@ package com.example.destinybuildoptimizer;
 
 public class Ghost extends Item{
 
-    public Ghost(Integer id){
+    public Ghost(int id, String name, String iconURL, String detailURL){
         super.ID = id;
-        super.name = "";
+        super.name = name;
         super.isFavourite = false;
-        super.icon = "";
-        super.detailsImage = "";
+        super.icon = iconURL;
+        super.detailsImage = detailURL;
         super.isExotic = false;
+
+        Account account = DApplication.getAccount();
+        account.ghostStorage.add(this);
     }
 }
