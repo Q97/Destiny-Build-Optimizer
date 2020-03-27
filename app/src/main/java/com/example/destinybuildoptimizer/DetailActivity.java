@@ -22,8 +22,8 @@ public class DetailActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail);
 
-      /*  Account account = DApplication.getAccount();
-        ArmourPiece currentItem = (ArmourPiece)DApplication.getCurrentItem();
+        /*final Account account = DApplication.getAccount();
+        final ArmourPiece currentItem = (ArmourPiece)DApplication.getCurrentItem();
 
         final TextView detailName = findViewById(R.id.detail_name);
         final ImageView detailIcon = findViewById(R.id.detail_icon);

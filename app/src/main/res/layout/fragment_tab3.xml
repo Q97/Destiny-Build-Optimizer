@@ -183,7 +183,7 @@
             android:layout_height="90dp"
             android:layout_marginStart="37dp"
             android:layout_marginTop="40dp"
-            android:src="@drawable/iron_fellowship_casque"
+            android:src="@drawable/pistol_icon"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/classicontab3" />
 
@@ -193,7 +193,7 @@
             android:layout_height="90dp"
             android:layout_marginStart="36dp"
             android:layout_marginTop="40dp"
-            android:src="@drawable/iron_fellowship_casque"
+            android:src="@drawable/hush_icon"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/kinetic_tab3" />
 
@@ -203,7 +203,7 @@
             android:layout_height="90dp"
             android:layout_marginStart="37dp"
             android:layout_marginTop="40dp"
-            android:src="@drawable/iron_fellowship_casque"
+            android:src="@drawable/love_and_death_icon1"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/energy_tab3" />
 
@@ -213,7 +213,7 @@
             android:layout_height="90dp"
             android:layout_marginStart="36dp"
             android:layout_marginTop="40dp"
-            android:src="@drawable/iron_fellowship_casque"
+            android:src="@drawable/omolon_shell_icon"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/power_tab3" />
 
@@ -223,7 +223,7 @@
             android:layout_height="90dp"
             android:layout_marginTop="40dp"
             android:layout_marginEnd="37dp"
-            android:src="@drawable/iron_fellowship_casque"
+            android:src="@drawable/gensym_knight_casque_icon1"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -233,7 +233,7 @@
             android:layout_height="90dp"
             android:layout_marginTop="40dp"
             android:layout_marginEnd="37dp"
-            android:src="@drawable/iron_fellowship_casque"
+            android:src="@drawable/gensym_knight_grips_icon"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/helmet_tab3" />
 
@@ -243,7 +243,7 @@
             android:layout_height="90dp"
             android:layout_marginTop="40dp"
             android:layout_marginEnd="37dp"
-            android:src="@drawable/iron_fellowship_casque"
+            android:src="@drawable/gensym_knight_cuirass_icon"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/arms_tab3" />
 
@@ -253,7 +253,7 @@
             android:layout_height="90dp"
             android:layout_marginTop="40dp"
             android:layout_marginEnd="37dp"
-            android:src="@drawable/iron_fellowship_casque"
+            android:src="@drawable/gensym_knight_strides_icon"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/chest_tab3" />
 
@@ -263,7 +263,7 @@
             android:layout_height="90dp"
             android:layout_marginTop="40dp"
             android:layout_marginEnd="37dp"
-            android:src="@drawable/iron_fellowship_casque"
+            android:src="@drawable/gensym_knight_cloak_icon"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/legs_tab3" />
 

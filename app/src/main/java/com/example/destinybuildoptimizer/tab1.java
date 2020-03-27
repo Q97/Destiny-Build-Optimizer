@@ -3,6 +3,7 @@ package com.example.destinybuildoptimizer;
 
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -13,6 +14,9 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.fragment.app.Fragment;
+
+import static android.app.Activity.RESULT_CANCELED;
+import static android.app.Activity.RESULT_OK;
 
 
 /**
@@ -230,7 +234,7 @@ public class tab1 extends Fragment {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getContext(), InventoryActivity.class);
-                startActivityForResult(intent, REQUEST_CODE);
+                 startActivityForResult(intent, REQUEST_CODE);
             }
         });
 
@@ -239,7 +243,7 @@ public class tab1 extends Fragment {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getContext(), InventoryActivity.class);
-                startActivityForResult(intent, REQUEST_CODE);
+                 startActivityForResult(intent, REQUEST_CODE);
             }
         });
 
@@ -273,4 +277,20 @@ public class tab1 extends Fragment {
 
         return view;
     }
+
+    public void onActivityResult(int requestCode, int resultCode, Intent data){
+
+        if (requestCode == 1) {
+
+            if (resultCode == RESULT_OK) {
+                helmetbtn.setImageResource(R.drawable.iron_fellowship_casque);
+            }
+            if (resultCode == RESULT_CANCELED) {
+                //Do nothing?
+            }
+        }
+
+    }
+
+
 }

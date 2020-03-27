@@ -3,6 +3,7 @@ package com.example.destinybuildoptimizer;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
@@ -26,7 +27,10 @@ public class InventoryActivity extends AppCompatActivity {
         btn_fav_slot1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent returnIntent = new Intent();
+                returnIntent.putExtra("image","done");
+                setResult(RESULT_OK,returnIntent);
+                finish();
             }
         });
     }
