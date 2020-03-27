@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/app_background"
-    tools:context=".InventoryActivity">
+    tools:context="com.example.destinybuildoptimizer.InventoryActivity">
 
     <TextView
         android:id="@+id/currentlyEquippedText"
@@ -28,7 +28,7 @@
         android:background="?android:selectableItemBackground"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="?attr/actionModeCloseDrawable" />
+        app:srcCompat="?android:attr/actionModeCloseDrawable" />
 
     <ScrollView
         android:layout_width="match_parent"
