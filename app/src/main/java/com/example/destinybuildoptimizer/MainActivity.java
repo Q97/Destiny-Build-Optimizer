@@ -14,8 +14,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    public void startCharacter(View v){
-        startActivity(new Intent(MainActivity.this, CharacterActivity.class));
+    public void startTabsActivity(View v){
+        startActivity(new Intent(MainActivity.this, TabScreensActivity.class));
     }
 
 

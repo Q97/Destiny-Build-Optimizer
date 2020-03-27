@@ -1,8 +1,16 @@
 <resources>
     <string name="app_name">Destiny Build Optimizer</string>
-
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="continueText">Tap to Continue</string>
+    <string name="currentlyEquippedText">Currently Equipped: </string>
+    <string name="inventoryText">/Inventory</string>
+    <string name="favouriteText">/Favourites</string>
+    <string name="vaultText">/Vault</string>
+    <string name="energyText">Energy</string>
+    <string name="UnusedText">Unused</string>
+    <string name="tutorial">1.\"HOLD\" on an item to view the item detail screen \n\n
+    2.\"TAP\" on an item when on the inventory screen to equip \n\n
+    3.\"TAP\" on an item when in the vault screen to send it to a specified character</string>
+    <string name="test">YahYeet</string>
 
 
 </resources>
