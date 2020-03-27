@@ -33,10 +33,6 @@ public class Account {
         ghostStorage = new ArrayList<>();
     }
 
-    public void setCurrentCharacter(int cNum){
-        currentCharacter = characters.get(cNum);
-    }
-
     public void addCharacter(Character c){
         if(characters.size() < 3){
             characters.add(c);

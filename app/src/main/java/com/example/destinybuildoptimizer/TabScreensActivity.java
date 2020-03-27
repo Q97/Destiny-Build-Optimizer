@@ -18,7 +18,6 @@ public class TabScreensActivity extends AppCompatActivity {
     private PageAdapter adapter;
     private TabLayout tabLayout;
     private TabItem tab1,tab2,tab3,tab4;
-    private Account account;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,26 +34,24 @@ public class TabScreensActivity extends AppCompatActivity {
         adapter = new PageAdapter(getSupportFragmentManager(), tabLayout.getTabCount());
         viewPager.setAdapter(adapter);
 
-        account = DApplication.getAccount();
-
         tabLayout.setOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override
             public void onTabSelected(TabLayout.Tab tab) {
                 viewPager.setCurrentItem(tab.getPosition());
 
                 if(tab.getPosition()==0) {
-                    account.setCurrentCharacter(0);
+                    DApplication.setCurrentCharacter(0);
                     adapter.notifyDataSetChanged();
                     tabLayout.setBackground(getDrawable(R.drawable.fullemblem1));
 
                 }
                 else if(tab.getPosition()==1) {
-                    account.setCurrentCharacter(1);
+                    DApplication.setCurrentCharacter(1);
                     adapter.notifyDataSetChanged();
                     tabLayout.setBackground(getDrawable(R.drawable.fullemblem2));
                 }
                 else if(tab.getPosition()==2) {
-                    account.setCurrentCharacter(2);
+                    DApplication.setCurrentCharacter(2);
                     adapter.notifyDataSetChanged();
                     tabLayout.setBackground(getDrawable(R.drawable.fullemblem3));
                 }
