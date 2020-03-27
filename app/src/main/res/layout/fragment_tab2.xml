@@ -183,7 +183,7 @@
             android:layout_height="90dp"
             android:layout_marginStart="37dp"
             android:layout_marginTop="40dp"
-            android:src="@drawable/iron_fellowship_casque"
+            android:src="@drawable/beloved_icon1"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/classIcontab2" />
 
@@ -193,7 +193,7 @@
             android:layout_height="90dp"
             android:layout_marginStart="36dp"
             android:layout_marginTop="40dp"
-            android:src="@drawable/iron_fellowship_casque"
+            android:src="@drawable/gnawing_hunger_icon"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/kinetic_tab2" />
 
@@ -203,7 +203,7 @@
             android:layout_height="90dp"
             android:layout_marginStart="37dp"
             android:layout_marginTop="40dp"
-            android:src="@drawable/iron_fellowship_casque"
+            android:src="@drawable/t21_delirium_icon"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/energy_tab2" />
 
@@ -213,7 +213,7 @@
             android:layout_height="90dp"
             android:layout_marginStart="36dp"
             android:layout_marginTop="40dp"
-            android:src="@drawable/iron_fellowship_casque"
+            android:src="@drawable/eris_morn_shell_icon1"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/power_tab2" />
 
@@ -223,7 +223,7 @@
             android:layout_height="90dp"
             android:layout_marginTop="40dp"
             android:layout_marginEnd="37dp"
-            android:src="@drawable/iron_fellowship_casque"
+            android:src="@drawable/bladesmiths_memory_mask_icon"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -233,7 +233,7 @@
             android:layout_height="90dp"
             android:layout_marginTop="40dp"
             android:layout_marginEnd="37dp"
-            android:src="@drawable/iron_fellowship_casque"
+            android:src="@drawable/bladesmiths_memory_grips_icon"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/helmet_tab2" />
 
@@ -243,7 +243,7 @@
             android:layout_height="90dp"
             android:layout_marginTop="40dp"
             android:layout_marginEnd="37dp"
-            android:src="@drawable/iron_fellowship_casque"
+            android:src="@drawable/bladesmiths_memory_vest_icon"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/arms_tab2" />
 
@@ -253,7 +253,7 @@
             android:layout_height="90dp"
             android:layout_marginTop="40dp"
             android:layout_marginEnd="37dp"
-            android:src="@drawable/iron_fellowship_casque"
+            android:src="@drawable/bladesmiths_memory_strides_icon"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/chest_tab2" />
 
@@ -263,7 +263,7 @@
             android:layout_height="90dp"
             android:layout_marginTop="40dp"
             android:layout_marginEnd="37dp"
-            android:src="@drawable/iron_fellowship_casque"
+            android:src="@drawable/bladesmiths_memory_cloak_icon"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/legs_tab2" />
 
