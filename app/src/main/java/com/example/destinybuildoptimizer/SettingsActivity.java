@@ -22,5 +22,13 @@ public class SettingsActivity extends AppCompatActivity {
                 onBackPressed();
             }
         });
+
+        final Button logout = findViewById(R.id.log_out_btn);
+        logout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(SettingsActivity.this, MainActivity.class));
+            }
+        });
     }
 }

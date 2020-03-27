@@ -13,7 +13,7 @@ import android.widget.TextView;
 
 import org.w3c.dom.Text;
 
-import static com.example.destinybuildoptimizer.DApplication.account;
+//import static com.example.destinybuildoptimizer.DApplication.account;
 
 public class DetailActivity extends AppCompatActivity {
 
@@ -22,7 +22,7 @@ public class DetailActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail);
 
-        Account account = DApplication.getAccount();
+      /*  Account account = DApplication.getAccount();
         ArmourPiece currentItem = (ArmourPiece)DApplication.getCurrentItem();
 
         final TextView detailName = findViewById(R.id.detail_name);
@@ -96,6 +96,6 @@ public class DetailActivity extends AppCompatActivity {
             public void onClick(View v) {
                 onBackPressed();
             }
-        });
+        });*/
     }
 }

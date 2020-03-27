@@ -21,5 +21,13 @@ public class InventoryActivity extends AppCompatActivity {
                 onBackPressed();
             }
         });
+
+        final ImageButton btn_fav_slot1 = (ImageButton) findViewById(R.id.favourite_slot1);
+        btn_fav_slot1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
     }
 }
