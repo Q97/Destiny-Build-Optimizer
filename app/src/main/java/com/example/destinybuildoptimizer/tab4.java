@@ -21,8 +21,9 @@ import static android.app.Activity.RESULT_OK;
 public class tab4 extends Fragment {
 
     public static final int REQUEST_CODE = 1;
-    ImageButton helmetbtn;
-    tab1 j =new tab1();
+    ImageButton slot1;
+    ImageButton slot2;
+
     public tab4() {
         // Required empty public constructor
     }
@@ -34,7 +35,9 @@ public class tab4 extends Fragment {
 
         View view = inflater.inflate(R.layout.fragment_tab4, container, false);
 
-        final ImageButton slot1 = (ImageButton) view.findViewById(R.id.vault_slot1);
+        slot2 =(ImageButton) view.findViewById(R.id.vault_slot2);
+
+        slot1 = (ImageButton) view.findViewById(R.id.vault_slot1);
         slot1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -51,7 +54,9 @@ public class tab4 extends Fragment {
         if (requestCode == 1) {
 
             if (resultCode == RESULT_OK) {
-                j.setHelmetbtn();
+                slot1.setImageResource(R.drawable.reverie_dawn_casque_icon1);
+                slot2.setImageResource(R.drawable.empty_slot);
+
             }
             if (resultCode == RESULT_CANCELED) {
                 //Do nothing?

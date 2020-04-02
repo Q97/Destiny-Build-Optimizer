@@ -43,6 +43,10 @@ public class tab1 extends Fragment {
         final TextView disciplineVal = view.findViewById(R.id.disciplinevalue_tab1);
         final TextView intellectVal = view.findViewById(R.id.intellectvalue_tab1);
         final TextView strengthVal = view.findViewById(R.id.strengthvalue_tab1);
+        final ImageButton armsbtn = (ImageButton) view.findViewById(R.id.arms_tab1);
+        final ImageButton chestbtn = (ImageButton) view.findViewById(R.id.chest_tab1);
+        final ImageButton legsbtn = (ImageButton) view.findViewById(R.id.legs_tab1);
+        final ImageButton classitembtn = (ImageButton) view.findViewById(R.id.classitem_tab1);
 
         final ImageButton mobilityBtn = view.findViewById(R.id.mobility_tab1);
         mobilityBtn.setOnClickListener(new View.OnClickListener() {
@@ -61,6 +65,10 @@ public class tab1 extends Fragment {
                         disciplineVal.setText("21");
                         intellectVal.setText("15");
                         strengthVal.setText("46");
+                        armsbtn.setImageResource(R.drawable.bladesmiths_memory_grips_icon);
+                        chestbtn.setImageResource(R.drawable.gensym_knight_cuirass_icon);
+                        legsbtn.setImageResource(R.drawable.boots_of_the_ace_defiant_icon);
+                        classitembtn.setImageResource(R.drawable.the_took_offense_hunter_cloak_icon);
                     }
                 });
                 builder.setNegativeButton("No", new DialogInterface.OnClickListener() {
@@ -216,6 +224,7 @@ public class tab1 extends Fragment {
                         disciplineVal.setText("66");
                         intellectVal.setText("34");
                         strengthVal.setText("89");
+
                     }
                 });
                 builder.setNegativeButton("No", new DialogInterface.OnClickListener() {
@@ -239,7 +248,6 @@ public class tab1 extends Fragment {
             }
         });
 
-        final ImageButton armsbtn = (ImageButton) view.findViewById(R.id.arms_tab1);
         armsbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -248,7 +256,7 @@ public class tab1 extends Fragment {
             }
         });
 
-        final ImageButton chestbtn = (ImageButton) view.findViewById(R.id.chest_tab1);
+
         chestbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -257,7 +265,7 @@ public class tab1 extends Fragment {
             }
         });
 
-        final ImageButton legsbtn = (ImageButton) view.findViewById(R.id.legs_tab1);
+
         legsbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -266,7 +274,7 @@ public class tab1 extends Fragment {
             }
         });
 
-        final ImageButton classitembtn = (ImageButton) view.findViewById(R.id.classitem_tab1);
+
         classitembtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

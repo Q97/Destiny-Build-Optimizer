@@ -104,7 +104,7 @@ public class DetailActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent returnIntent = new Intent();
-                returnIntent.putExtra("image","done");
+                returnIntent.putExtra("image2","done2");
                 setResult(RESULT_OK,returnIntent);
                 finish();
             }
